@@ -54,6 +54,10 @@ Thread Name is must.
 How to Run
 
 Clone the repository and navigate to the project folder.
+
 Run mvn spring-boot:run to start the application.
+
 Use a tool like curl or Postman to make a POST request to the API endpoint.
+
 This README is intended to be a quick guide. For more details, you can refer to the inline comments in the code.
+
