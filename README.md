@@ -1,9 +1,12 @@
 # Thread_trace_tool
 Thread Dump Analyzer
+
 Overview
+
 This Spring Boot application exposes an API endpoint for parsing thread dumps. The API is particularly useful for performance engineers and developers who need to analyze Java thread dumps for debugging and performance tuning.
 
 Features
+
 Parse thread dump data and categorize each thread's details.
 Filters threads based on a name pattern, if provided.
 Returns a JSON response that includes each thread's name, state, method calls, and other unmatched lines.
