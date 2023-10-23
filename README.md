@@ -23,22 +23,33 @@ curl -X POST "http://localhost:8080/api/threaddump1?threadNamePattern=ueue-consu
      -d "@your_thread_dump.txt"
 
 
+
      
 Response Format
+
 The API returns a JSON array where each object represents a parsed thread from the thread dump. Each object includes the following fields:
 
 threadName: The name of the thread
+
 threadState: The state of the thread
+
 atCount: The number of at lines in the thread dump for this thread
+
 methodClassMap: A map of simple class names to method names
+
 unmatchedLines: An array of lines that could not be parsed
+
 
 Limitations
 
 The API expects well-formatted thread dumps. Malformed thread dumps may result in incorrect or incomplete parsing.
+
 The API does not currently support parsing native thread dumps or non-Java thread dumps.
+
 The optional threadNamePattern parameter is case-sensitive and filters based on the starting string of the thread name.
-Thread Name is must
+
+Thread Name is must.
+
 
 How to Run
 
