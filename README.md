@@ -15,7 +15,7 @@ RequestBody: The raw thread dump data as a string.
 threadNamePattern (Optional): A query parameter to filter thread names. Only threads that start with this pattern will be included in the output.
 Sample Request
 
-curl -X POST "http://localhost:8080/api/threaddump1?threadNamePattern=collab-scheduler-fetch-queue-consumer" \
+curl -X POST "http://localhost:8080/api/threaddump1?threadNamePattern=ueue-consumer" \
      -H "Content-Type: application/json" \
      -d "@your_thread_dump.txt"
 
